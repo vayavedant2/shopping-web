@@ -1,0 +1,26 @@
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.carousel-indicators .active {
+  background-color: seagreen;
+}
+.rounded-pill{
+    border-radius: 25px;
+}
+.section-header a, .blog-card a {
+    text-decoration: none;
+    color: black;   
+}
+.text-wrapper a{
+    text-decoration: none;
+        color: white;
+    }
+
+ul{
+    list-style: none;
+}

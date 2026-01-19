@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+<body>
+
+
+    <!-- Top Bar -->
+    <div class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center small">
+
+                <!-- Left text -->
+                <div class="mr-2">
+                    🔥 Flat 20% OFF on all products
+                    <a href="#" class="text-white p-4">MEN</a>
+                    <a href="#" class="text-white">WOMEN</a>
+                </div>
+
+                <!-- Right dropdowns -->
+                <div class="d-flex m-3">
+                    <div class="dropdown">
+                        <button class="btn btn-dark btn-sm dropdown-toggle" data-toggle="dropdown-menu-right">
+                            English
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Hindi</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Currency -->
+                    <div class="dropdown">
+                        <button class="btn btn-dark btn-sm dropdown-toggle" data-toggle="dropdown-menu-right">
+                            🇺🇸 USD
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">INR</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-sm bg-white sticky-top">
+        <div class="container">
+            <!-- logo -->
+            <div class="d-flex justify-content-between align-items-center w-100">
+                <a href="#" class="navbar-brand">
+                    <img src="img/mlogo.png" alt="Logo" style="height: 40px;">
+                </a>
+                <div class="dropdown text-dark">
+                    <button class="btn btn-sm dropdown-toggle text-dark bg-white"
+                        data-bs-toggle="dropdown">Home</button>
+                    <button class="btn btn-sm dropdown-toggle bg-white" data-bs-toggle="dropdown">Shop</button>
+                    <button class="btn btn-sm dropdown-toggle bg-white" data-bs-toggle="dropdown">Page</button>
+                    <button class="btn btn-sm dropdown-toggle bg-white" data-bs-toggle="dropdown">Product</button>
+                    <button class="btn btn-sm dropdown-toggle bg-white" data-bs-toggle="dropdown">Blog</button>
+                </div>
+                <!-- icons -->
+                <div class="">
+                    <div class="p-4">
+                        <i class="fas fa-user"></i>
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Scroll showcase section -->
+
+
+    <div class="carousel slide" id="heroCarousel" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#heroCarousel"></li>
+            <li class="" data-slide-to="1" data-target="#heroCarousel"></li>
+            <li class="" data-slide-to="2" data-target="#heroCarousel"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-12 position-relative">
+                            <img src="img/create-section1.jpg" alt="" class="img-fluid">
+
+                            <div class="position-absolute text-dark" style="top:40%; left:10%;">
+                                <h2 class="title">Fall Winter Collection</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                <button class="btn btn-lg btn-dark text-white">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="container mt-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-12 position-relative">
+                            <img src="img/share-section1.jpg" alt="" class="img-fluid">
+
+                            <div class="position-absolute text-dark" style="top:40%; left:10%;">
+                                <h2 class="title">Fall Winter Collection</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                <button class="btn btn-lg btn-dark text-white">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="container mt-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-12 position-relative">
+                            <img src="img/explore-section1.jpg" alt="" class="img-fluid">
+
+                            <div class="position-absolute text-dark" style="top:40%; left:10%;">
+                                <h2 class="title">Fall Winter Collection</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                                <button class="btn btn-lg btn-dark text-white">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Category section -->
+
+    <section class="p-3">
+        <div class="container container-fluid">
+            <div class="row no-gutters">
+                <div class="col-12 col-md-4 position-relative p-2">
+                    <img src="img/image2.jpg" alt="" class="img-fluid w-100">
+                    <div class="position-absolute d-flex justify-content-center"
+                        style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
+                        <button class="btn btn-light rounded-pill px-4 py-2">Clothing | <small>SHOP NOW</small></button>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 position-relative p-2">
+                    <img src="img/image1.jpg" alt="" class="img-fluid w-100">
+                    <div class="position-absolute d-flex justify-content-center"
+                        style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
+                        <button class="btn btn-light rounded-pill px-4 py-2">Clothing | <small>SHOP NOW</small></button>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 position-relative p-2">
+                    <img src="img/image3.jpg" alt="" class="img-fluid w-100">
+                    <div class="position-absolute d-flex justify-content-center"
+                        style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
+                        <button class="btn btn-light rounded-pill px-4 py-2">Clothing | <small>SHOP NOW</small></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New arrival section -->
+
+    <section>
+        <div class="container">
+            <div class="section-header align-item-center text-center">
+                <h3>New Arrival</h3>
+                <div class="p-2 d-flex justify-content-center">
+                    <a class="mx-3" href="#">Best Trending</a>
+                    <a class="mx-3" href="#">On Sale</a>
+                    <a class="mx-3" href="#">Best Seller</a>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="product-card col-12 col-sm-6 col-md-3">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/image2.jpg" alt="" class="img-fluid w-100 product-img">
+                            <div class="d-flex justify-content-center mt-3">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Product name</h4>
+                            <p class="mb-1">
+                                <span class="text-muted">
+                                    <del>$99</del>
+                                </span>
+                                <span class="font-weight-bold ml-2">$66</span>
+                            </p>
+                            <span class="d-inline-block bg-danger rounded-circle"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'red')"></span>
+
+                            <span class="d-inline-block bg-primary rounded-circle mx-2"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'blue')"></span>
+
+                            <span class="d-inline-block bg-dark rounded-circle"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'black')"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card col-12 col-sm-6 col-md-3">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/image3.jpg" alt="" class="img-fluid w-100 product-img">
+                            <div class="d-flex justify-content-center mt-3">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Product name</h4>
+                            <p class="mb-1">
+                                <span class="text-muted">
+                                    <del>$99</del>
+                                </span>
+                                <span class="font-weight-bold ml-2">$66</span>
+                            </p>
+                            <span class="d-inline-block bg-danger rounded-circle"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'red')"></span>
+
+                            <span class="d-inline-block bg-primary rounded-circle mx-2"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'blue')"></span>
+
+                            <span class="d-inline-block bg-dark rounded-circle"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'black')"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card col-12 col-sm-6 col-md-3">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/image2.jpg" alt="" class="img-fluid w-100 product-img">
+                            <div class="d-flex justify-content-center mt-3">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Product name</h4>
+                            <p class="mb-1">
+                                <span class="text-muted">
+                                    <del>$99</del>
+                                </span>
+                                <span class="font-weight-bold ml-2">$66</span>
+                            </p>
+                            <span class="d-inline-block bg-danger rounded-circle"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'red')"></span>
+
+                            <span class="d-inline-block bg-primary rounded-circle mx-2"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'blue')"></span>
+
+                            <span class="d-inline-block bg-dark rounded-circle"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'black')"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card col-12 col-sm-6 col-md-3">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/image3.jpg" alt="" class="img-fluid w-100 product-img">
+                            <div class="d-flex justify-content-center mt-3">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Product name</h4>
+                            <p class="mb-1">
+                                <span class="text-muted">
+                                    <del>$99</del>
+                                </span>
+                                <span class="font-weight-bold ml-2">$66</span>
+                            </p>
+                            <span class="d-inline-block bg-danger rounded-circle"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'red')"></span>
+
+                            <span class="d-inline-block bg-primary rounded-circle mx-2"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'blue')"></span>
+
+                            <span class="d-inline-block bg-dark rounded-circle"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'black')"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card col-12 col-sm-6 col-md-3">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/image3.jpg" alt="" class="img-fluid w-100 product-img">
+                            <div class="d-flex justify-content-center mt-3">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Product name</h4>
+                            <p class="mb-1">
+                                <span class="text-muted">
+                                    <del>$99</del>
+                                </span>
+                                <span class="font-weight-bold ml-2">$66</span>
+                            </p>
+                            <span class="d-inline-block bg-danger rounded-circle"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'red')"></span>
+
+                            <span class="d-inline-block bg-primary rounded-circle mx-2"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'blue')"></span>
+
+                            <span class="d-inline-block bg-dark rounded-circle"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'black')"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card col-12 col-sm-6 col-md-3">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/image2.jpg" alt="" class="img-fluid w-100 product-img">
+                            <div class="d-flex justify-content-center mt-3">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Product name</h4>
+                            <p class="mb-1">
+                                <span class="text-muted">
+                                    <del>$99</del>
+                                </span>
+                                <span class="font-weight-bold ml-2">$66</span>
+                            </p>
+                            <span class="d-inline-block bg-danger rounded-circle"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'red')"></span>
+
+                            <span class="d-inline-block bg-primary rounded-circle mx-2"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'blue')"></span>
+
+                            <span class="d-inline-block bg-dark rounded-circle"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'black')"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card col-12 col-sm-6 col-md-3">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/image1.jpg" alt="" class="img-fluid w-100 product-img">
+                            <div class="d-flex justify-content-center mt-3">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Product name</h4>
+                            <p class="mb-1">
+                                <span class="text-muted">
+                                    <del>$99</del>
+                                </span>
+                                <span class="font-weight-bold ml-2">$66</span>
+                            </p>
+                            <span class="d-inline-block bg-danger rounded-circle"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'red')"></span>
+
+                            <span class="d-inline-block bg-primary rounded-circle mx-2"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'blue')"></span>
+
+                            <span class="d-inline-block bg-dark rounded-circle"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'black')"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card col-12 col-sm-6 col-md-3">
+                    <div class="card">
+                        <div class="image-wrapper">
+                            <img src="img/image2.jpg" alt="" class="img-fluid w-100 product-img">
+                            <div class="d-flex justify-content-center mt-3">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Product name</h4>
+                            <p class="mb-1">
+                                <span class="text-muted">
+                                    <del>$99</del>
+                                </span>
+                                <span class="font-weight-bold ml-2">$66</span>
+                            </p>
+                            <span class="d-inline-block bg-danger rounded-circle"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'red')"></span>
+
+                            <span class="d-inline-block bg-primary rounded-circle mx-2"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'blue')"></span>
+
+                            <span class="d-inline-block bg-dark rounded-circle"
+                                style="width:12px; height:12px; cursor:pointer;"
+                                onclick="changeColor(this, 'black')"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Shop this look -->
+
+    <section>
+        <div class="container">
+            <div class="section-header text-center p-3">
+                <h2>Shop This Look</h2>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-5 position-relative">
+                    <img src="img/home.jpg" alt="" class="img-fluid w-100">
+                    <div class="text-wrapper position-absolute text-white"
+                        style="bottom:30px; left:50%; transform:translateX(-50%);">
+                        <h4 class="">Lookbook</h4>
+                        <p>347 products</p>
+                        <a href="#">Explore Now</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="row">
+                        <div class="product-card-wrapper col-12 col-md-4">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="img/image1.jpg" alt="" class="img-fluid w-100 product-img">
+                                    <div class="d-flex justify-content-center mt-3">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4>Product name</h4>
+                                    <p class="mb-1">
+                                        <span class="text-muted">
+                                            <del>$99</del>
+                                        </span>
+                                        <span class="font-weight-bold ml-2">$66</span>
+                                    </p>
+                                    <span class="d-inline-block bg-danger rounded-circle"
+                                        style="width:12px; height:12px; cursor:pointer;"
+                                        onclick="changeColor(this, 'red')"></span>
+
+                                    <span class="d-inline-block bg-primary rounded-circle mx-2"
+                                        style="width:12px; height:12px; cursor:pointer;"
+                                        onclick="changeColor(this, 'blue')"></span>
+
+                                    <span class="d-inline-block bg-dark rounded-circle"
+                                        style="width:12px; height:12px; cursor:pointer;"
+                                        onclick="changeColor(this, 'black')"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-wrapper col-12 col-md-4">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="img/image1.jpg" alt="" class="img-fluid w-100 product-img">
+                                    <div class="d-flex justify-content-center mt-3">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4>Product name</h4>
+                                    <p class="mb-1">
+                                        <span class="text-muted">
+                                            <del>$99</del>
+                                        </span>
+                                        <span class="font-weight-bold ml-2">$66</span>
+                                    </p>
+                                    <span class="d-inline-block bg-danger rounded-circle"
+                                        style="width:12px; height:12px; cursor:pointer;"
+                                        onclick="changeColor(this, 'red')"></span>
+
+                                    <span class="d-inline-block bg-primary rounded-circle mx-2"
+                                        style="width:12px; height:12px; cursor:pointer;"
+                                        onclick="changeColor(this, 'blue')"></span>
+
+                                    <span class="d-inline-block bg-dark rounded-circle"
+                                        style="width:12px; height:12px; cursor:pointer;"
+                                        onclick="changeColor(this, 'black')"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-card-wrapper col-12 col-md-4">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="img/image1.jpg" alt="" class="img-fluid w-100 product-img">
+                                    <div class="d-flex justify-content-center mt-3">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h4>Product name</h4>
+                                    <p class="mb-1">
+                                        <span class="text-muted">
+                                            <del>$99</del>
+                                        </span>
+                                        <span class="font-weight-bold ml-2">$66</span>
+                                    </p>
+                                    <span class="d-inline-block bg-danger rounded-circle"
+                                        style="width:12px; height:12px; cursor:pointer;"
+                                        onclick="changeColor(this, 'red')"></span>
+
+                                    <span class="d-inline-block bg-primary rounded-circle mx-2"
+                                        style="width:12px; height:12px; cursor:pointer;"
+                                        onclick="changeColor(this, 'blue')"></span>
+
+                                    <span class="d-inline-block bg-dark rounded-circle"
+                                        style="width:12px; height:12px; cursor:pointer;"
+                                        onclick="changeColor(this, 'black')"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- customer reviews -->
+
+    <section>
+        <div class="container">
+            <div class="section-header text-center text-dark p-4">
+                <h2 class="mt-2">Customer Reviews</h2>
+            </div>
+            <div class="row align-items-center justify-content-center">
+
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card m-1 p-4">
+                        <h5 class="font-weight-bold">Best quality product</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, obcaecati. Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Provident, laborum.</p>
+                        <p class="mb-1">Steve Smith<i class="fas fa-check-circle text-success ml-2"></i></p>
+                        <div class="text-warning mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <hr>
+                        <div class="d-flex align-items-center mt-2">
+                            <img src="img/image2.jpg" class="mr-3 ml-2 mb-2" style="width:40px; height:40px;">
+                            <span class="font-weight-bold">Winter Jacket</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card m-1 p-4">
+                        <h5 class="font-weight-bold">Best quality product</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, obcaecati. Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Provident, laborum.</p>
+                        <p class="mb-1">Steve Smith<i class="fas fa-check-circle text-success ml-2"></i></p>
+                        <div class="text-warning mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <hr>
+                        <div class="d-flex align-items-center mt-2">
+                            <img src="img/image2.jpg" class="mr-3 ml-2 mb-2" style="width:40px; height:40px;">
+                            <span class="font-weight-bold">Winter Jacket</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center">
+                    <div class="card m-1 p-4">
+                        <h5 class="font-weight-bold">Best quality product</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, obcaecati. Lorem
+                            ipsum dolor sit amet consectetur adipisicing elit. Provident, laborum.</p>
+                        <p class="mb-1">Steve Smith<i class="fas fa-check-circle text-success ml-2"></i></p>
+                        <div class="text-warning mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <hr>
+                        <div class="d-flex align-items-center mt-2">
+                            <img src="img/image2.jpg" class="mr-3 ml-2 mb-2" style="width:40px; height:40px;">
+                            <span class="font-weight-bold">Winter Jacket</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Read Our BLOG section -->
+
+    <div class="blog-section">
+        <div class="container">
+            <div class="section-header text-center text-dark p-4">
+                <h2>Read Out Blog</h3>
+            </div>
+            <div class="row justify-content-center align-items-center">
+
+                <div class=" col-12 col-md-3 p-2 position-relative">
+                    <div class="card m-3 p-2 border-0">
+                        <div class="image-wrapper position-relative mb-2">
+                            <div class="date position-absolute bg-dark text-white text-center d-inline-block px-2 py-1">
+                                2nd March 2024
+                            </div>
+                            <img src="img/create-section1.jpg" alt="" class="img-fluid w-100"
+                                style="height:320px; object-fit:cover;">
+                        </div>
+                        <div class="blog-card">
+                            <h4>Bring confidence with simple T-shirt style</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, excepturi. Temporibus
+                                libero praesentium nulla dolore.</p>
+                            <a href="#"> Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-12 col-md-3 p-2 position-relative">
+                    <div class="card m-3 p-2 border-0">
+                        <div class="image-wrapper position-relative mb-2">
+                            <div class="date position-absolute bg-dark text-white text-center d-inline-block px-2 py-1">
+                                2nd March 2024
+                            </div>
+                            <img src="img/create-section1.jpg" alt="" class="img-fluid w-100"
+                                style="height:320px; object-fit:cover;">
+                        </div>
+                        <div class="blog-card">
+                            <h4>Bring confidence with simple T-shirt style</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, excepturi. Temporibus
+                                libero praesentium nulla dolore.</p>
+                            <a href="#"> Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-12 col-md-3 p-2 position-relative">
+                    <div class="card m-3 p-2 border-0">
+                        <div class="image-wrapper position-relative mb-2">
+                            <div class="date position-absolute bg-dark text-white text-center d-inline-block px-2 py-1">
+                                2nd March 2024
+                            </div>
+                            <img src="img/create-section1.jpg" alt="" class="img-fluid w-100"
+                                style="height:320px; object-fit:cover;">
+                        </div>
+                        <div class="blog-card">
+                            <h4>Bring confidence with simple T-shirt style</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, excepturi. Temporibus
+                                libero praesentium nulla dolore.</p>
+                            <a href="#"> Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-12 col-md-3 p-2 position-relative">
+                    <div class="card m-3 p-2 border-0">
+                        <div class="image-wrapper position-relative mb-2">
+                            <div class="date position-absolute bg-dark text-white text-center d-inline-block px-2 py-1">
+                                2nd March 2024
+                            </div>
+                            <img src="img/create-section1.jpg" alt="" class="img-fluid w-100"
+                                style="height:320px; object-fit:cover;">
+                        </div>
+                        <div class="blog-card">
+                            <h4>Bring confidence with simple T-shirt style</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, excepturi. Temporibus
+                                libero praesentium nulla dolore.</p>
+                            <a href="#"> Read more</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Follow on instagram -->
+
+    <div class="instagram">
+        <div class="container-fluid px-0">
+            <div class="section-header text-center m-2">
+                <h2>Follow us on Instagram</h2>
+                <small>@absc: Follow us and get<b> 20% off coupoun</b></small>
+            </div>
+            <div class="row no-gutters m-0">
+                <div class="col-12 col-md-2 p-0">
+                    <img src="img/share-section1.jpg" alt="" class="img-fluid w-100">
+                </div>
+                <div class="col-12 col-md-2 p-0">
+                    <img src="img/home.jpg" alt="" class="img-fluid w-100">
+                </div>
+                <div class="col-12 col-md-2 p-0">
+                    <img src="img/share-section1.jpg" alt="" class="img-fluid w-100">
+                </div>
+                <div class="col-12 col-md-2 p-0">
+                    <img src="img/explore-section1.jpg" alt="" class="img-fluid w-100">
+                </div>
+                <div class="col-12 col-md-2 p-0">
+                    <img src="img/home.jpg" alt="" class="img-fluid w-100">
+                </div>
+                <div class="col-12 col-md-2 p-0">
+                    <img src="img/share-section1.jpg" alt="" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="pt-5 pb-4 bg-light">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="col-head">
+                        <h4>Contact Us</h4>
+                    </div>
+                    <ul class="mb-2">
+                        <li><i class="fas fa-envelope mr-2"></i>test@test.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>Test address, Rajasthan</li>
+                        <li><i class="fas fa-phone mr-2"></i>+(91) 099090909</li>
+                        <li class="social d-flex mt-2">
+                        <i class="fab fa-facebook-f mr-3"></i>
+                        <i class="fab fa-instagram mr-3"></i>
+                        <i class="fab fa-twitter"></i>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="col-head">
+                        <h4>Shopping</h4>
+                    </div>
+                    <ul>
+                        <li>Shipping</li>
+                        <li>Shopping by Brand</li>
+                        <li>Track Order</li>
+                        <li>Wishlist</li>
+                        <li>Size Guide</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="col-head">
+                        <h4>Information</h4>
+                    </div>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Refunds</li>
+                        <li>Track Order</li>
+                        <li>Help Center</li>
+                        <li>Our Blog</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="col-head">
+                        <h4>Let's keep in touch</h4>
+                    </div>
+                    <div class="email d-flex mt-2">
+                        <input type="email" class="form-control mr-2" placeholder="Your Email">
+                        <button class="btn bg-dark rounded-pill px-4 text-white">Submit</button>
+                    </div>
+                    <div class="form-check mt-2">
+                        <input type="checkbox" class="form-check-input mt-2">
+                        <label for="termsCheck" class="form-check-label small text-muted">
+                            By clicking subscribe you agree to our <a href="#" class="text-dark">terms &amp; conditions</a>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- footer-bar-->
+
+    <div class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center small">
+
+                <!-- Left text -->
+                <div class="mr-2">
+                    <a href="#" class="text-white p-4">Help & FAQs</a>
+                    <a href="#" class="text-white">Factory</a>
+                </div>
+
+                <!-- Right dropdowns -->
+                <div class="d-flex m-3">
+                    <div class="dropdown">
+                        <button class="btn btn-dark btn-sm dropdown-toggle" data-toggle="dropdown-menu-right">
+                            English
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">Hindi</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Currency -->
+                    <div class="dropdown">
+                        <button class="btn btn-dark btn-sm dropdown-toggle" data-toggle="dropdown-menu-right">
+                            🇺🇸 USD
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">INR</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- script -->
+
+    <script>
+        // Configure Slider
+        $('.carousel').carousel({
+            interval: 3000,
+            pause: 'hover'
+        });
+
+        // color options under product
+
+        function changeColor(el, color) {
+            const card = el.closest('.product-card');
+            const img = card.querySelector('.product-img');
+
+            img.src = `img/shirt-${color}.png`;
+
+            card.querySelectorAll('.color-circle')
+                .forEach(c => c.classList.remove('active'));
+
+            el.classList.add('active');
+        }
+
+    </script>
+
+</body>
+
+</html>
