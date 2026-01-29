@@ -486,6 +486,9 @@ h6 {
 .rounded-pill {
     border-radius: 25px;
 }
+#subsbtn{
+    background-color: #000;
+}
 
 .section-header a,
 .blog-card a {
@@ -560,18 +563,22 @@ ul {
 }
 
 /* CATEGORY SECTION – FINAL */
-.category-card {
+.category-card, .insta-card {
     position: relative;
     overflow: hidden;
 }
 
-.category-img {
+.category-img, .insta {
     width: 100%;
     display: block;
     transition: transform 0.4s ease;
 }
 
 .category-card:hover .category-img {
+    transform: scale(1.06);
+}
+/* Instagram IMG */
+.insta-card:hover .insta{
     transform: scale(1.06);
 }
 
@@ -639,14 +646,11 @@ ul {
 }
 
 /* CATEGORY – DESKTOP GRID */
-@media (min-width: 769px) {
+@media (min-width: 992px) {
     #categoryCarousel {
         display: none;
     }
-}
 
-/* FIX: Force category desktop grid layout */
-@media (min-width: 769px) {
   .category-section .row.desktop-only {
     display: flex;
     flex-wrap: wrap;
@@ -656,4 +660,45 @@ ul {
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
   }
+}
+
+/* social icons */
+.social-icons i {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #303030;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+/* scroll indicator */
+#scroll-indicator {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  border-radius: 50%;
+  background: transparent;
+}
+
+#scroll-indicator svg {
+  display: block;
+}
+
+#scroll-indicator .arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: 100;
+  pointer-events: none;
 }

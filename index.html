@@ -17,8 +17,8 @@
 <body>
 
 
-    <!-- Top Bar -->
-    <div class="topbar text-white">
+    <!--Desktop Top Bar -->
+    <div class="topbar text-white ">
         <div class="container-fluid px-6">
             <div class="d-flex justify-content-between align-items-center small">
 
@@ -79,6 +79,8 @@
             </div>
         </div>
     </div>
+
+
 
     <!-- HERO SECTION -->
     <section class="hero">
@@ -158,7 +160,34 @@
         <header class="mobile-header mobile-only">
             <button class="burger-btn">☰</button>
             <img src="img/main-logo.png" class="mobile-logo" alt="Logo">
+            <!-- Cart -->
             <div class="mobile-cart">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="9" cy="21" r="1" />
+                    <circle cx="20" cy="21" r="1" />
+                    <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6" />
+                </svg>
+        </header>
+        </div>
+        <!-- Tablet navbar -->
+
+        <header class="mobile-header tablet-only">
+            <button class="burger-btn">☰</button>
+            <img src="img/main-logo.png" class="mobile-logo" alt="Logo">
+            <div class="header-icons-tab ms-auto">
+                <!-- Search -->
+                <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="7" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+
+                <!-- Heart -->
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path
+                        d="M20.8 4.6c-1.6-1.6-4.2-1.6-5.8 0L12 7.6l-3-3c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l8.8 8.8 8.8-8.8c1.6-1.6 1.6-4.2 0-5.8z" />
+                </svg>
+
+                <!-- Cart -->
                 <svg class="icon" viewBox="0 0 24 24">
                     <circle cx="9" cy="21" r="1" />
                     <circle cx="20" cy="21" r="1" />
@@ -234,10 +263,10 @@
                     </div>
 
                     <ol class="carousel-indicators">
-                    <li data-target="#categoryCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#categoryCarousel" data-slide-to="1"></li>
-                    <li data-target="#categoryCarousel" data-slide-to="2"></li>
-                </ol>
+                        <li data-target="#categoryCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#categoryCarousel" data-slide-to="1"></li>
+                        <li data-target="#categoryCarousel" data-slide-to="2"></li>
+                    </ol>
 
                 </div>
             </div>
@@ -294,7 +323,7 @@
     <section>
         <div class="container">
             <div class="section-header align-item-center text-center">
-                <h3>New Arrival</h3>
+                <h1>New Arrival</h1>
                 <div class="p-2 d-flex justify-content-center">
                     <a class="mx-3" href="#">Best Trending</a>
                     <a class="mx-3" href="#">On Sale</a>
@@ -553,11 +582,11 @@
     <section>
         <div class="container">
             <div class="section-header text-center p-3">
-                <h2>Shop This Look</h2>
+                <h1>Shop This Look</h1>
             </div>
             <div class="row align-items-center">
                 <div class="col-12 col-md-5 position-relative">
-                    <img src="img/home.jpg" alt="" class="img-fluid w-100">
+                    <img src="img/lookbook.png" alt="" class="img-fluid w-100">
                     <div class="text-wrapper position-absolute text-white"
                         style="bottom:30px; left:50%; transform:translateX(-50%);">
                         <h4 class="">Lookbook</h4>
@@ -570,7 +599,7 @@
                         <div class="product-card-wrapper col-12 col-md-4">
                             <div class="card">
                                 <div class="image-wrapper">
-                                    <img src="img/image1.jpg" alt="" class="img-fluid w-100 product-img">
+                                    <img src="img/lk-1.png" alt="" class="img-fluid w-100 product-img">
                                     <div class="d-flex justify-content-center mt-3">
                                     </div>
                                 </div>
@@ -599,7 +628,7 @@
                         <div class="product-card-wrapper col-12 col-md-4">
                             <div class="card">
                                 <div class="image-wrapper">
-                                    <img src="img/image1.jpg" alt="" class="img-fluid w-100 product-img">
+                                    <img src="img/lk-2.png" alt="" class="img-fluid w-100 product-img">
                                     <div class="d-flex justify-content-center mt-3">
                                     </div>
                                 </div>
@@ -628,7 +657,7 @@
                         <div class="product-card-wrapper col-12 col-md-4">
                             <div class="card">
                                 <div class="image-wrapper">
-                                    <img src="img/image1.jpg" alt="" class="img-fluid w-100 product-img">
+                                    <img src="img/lk-3.png" alt="" class="img-fluid w-100 product-img">
                                     <div class="d-flex justify-content-center mt-3">
                                     </div>
                                 </div>
@@ -664,8 +693,8 @@
 
     <section>
         <div class="container">
-            <div class="section-header text-center text-dark p-4">
-                <h2 class="mt-2">Customer Reviews</h2>
+            <div class="section-header text-center p-4">
+                <h1 class="mt-2">Customer Reviews</h1>
             </div>
             <div class="row align-items-center justify-content-center">
 
@@ -684,7 +713,7 @@
                         </div>
                         <hr>
                         <div class="d-flex align-items-center mt-2">
-                            <img src="img/image2.jpg" class="mr-3 ml-2 mb-2" style="width:40px; height:40px;">
+                            <img src="rev-img/image copy 2.png" class="mr-3 ml-2 mb-2" style="width:40px; height:40px;">
                             <span class="font-weight-bold">Winter Jacket</span>
                         </div>
                     </div>
@@ -705,7 +734,7 @@
                         </div>
                         <hr>
                         <div class="d-flex align-items-center mt-2">
-                            <img src="img/image2.jpg" class="mr-3 ml-2 mb-2" style="width:40px; height:40px;">
+                            <img src="rev-img/image copy.png" class="mr-3 ml-2 mb-2" style="width:40px; height:40px;">
                             <span class="font-weight-bold">Winter Jacket</span>
                         </div>
                     </div>
@@ -726,7 +755,7 @@
                         </div>
                         <hr>
                         <div class="d-flex align-items-center mt-2">
-                            <img src="img/image2.jpg" class="mr-3 ml-2 mb-2" style="width:40px; height:40px;">
+                            <img src="rev-img/image.png" class="mr-3 ml-2 mb-2" style="width:40px; height:40px;">
                             <span class="font-weight-bold">Winter Jacket</span>
                         </div>
                     </div>
@@ -741,8 +770,8 @@
 
     <div class="blog-section">
         <div class="container">
-            <div class="section-header text-center text-dark p-4">
-                <h2>Read Out Blog</h3>
+            <div class="section-header text-center p-4">
+                <h1>Read Our Blog</h1>
             </div>
             <div class="row justify-content-center align-items-center">
 
@@ -752,7 +781,7 @@
                             <div class="date position-absolute bg-dark text-white text-center d-inline-block px-2 py-1">
                                 2nd March 2024
                             </div>
-                            <img src="img/create-section1.jpg" alt="" class="img-fluid w-100"
+                            <img src="blog-img/image.png" alt="" class="img-fluid w-100"
                                 style="height:320px; object-fit:cover;">
                         </div>
                         <div class="blog-card">
@@ -770,7 +799,7 @@
                             <div class="date position-absolute bg-dark text-white text-center d-inline-block px-2 py-1">
                                 2nd March 2024
                             </div>
-                            <img src="img/create-section1.jpg" alt="" class="img-fluid w-100"
+                            <img src="blog-img/image copy.png" alt="" class="img-fluid w-100"
                                 style="height:320px; object-fit:cover;">
                         </div>
                         <div class="blog-card">
@@ -788,7 +817,7 @@
                             <div class="date position-absolute bg-dark text-white text-center d-inline-block px-2 py-1">
                                 2nd March 2024
                             </div>
-                            <img src="img/create-section1.jpg" alt="" class="img-fluid w-100"
+                            <img src="blog-img/image copy 2.png" alt="" class="img-fluid w-100"
                                 style="height:320px; object-fit:cover;">
                         </div>
                         <div class="blog-card">
@@ -806,7 +835,7 @@
                             <div class="date position-absolute bg-dark text-white text-center d-inline-block px-2 py-1">
                                 2nd March 2024
                             </div>
-                            <img src="img/create-section1.jpg" alt="" class="img-fluid w-100"
+                            <img src="blog-img/image copy 3.png" alt="" class="img-fluid w-100"
                                 style="height:320px; object-fit:cover;">
                         </div>
                         <div class="blog-card">
@@ -828,27 +857,27 @@
     <div class="instagram">
         <div class="container-fluid px-0">
             <div class="section-header text-center m-2">
-                <h2>Follow us on Instagram</h2>
+                <h1>Follow us on Instagram</h1>
                 <small>@absc: Follow us and get<b> 20% off coupoun</b></small>
             </div>
             <div class="row no-gutters m-0">
-                <div class="col-12 col-md-2 p-0">
-                    <img src="img/share-section1.jpg" alt="" class="img-fluid w-100">
+                <div class="insta-card col-12 col-md-2 p-0">
+                    <img src="insta-img/image.png" alt="" class="insta img-fluid w-100">
                 </div>
-                <div class="col-12 col-md-2 p-0">
-                    <img src="img/home.jpg" alt="" class="img-fluid w-100">
+                <div class="insta-card col-12 col-md-2 p-0">
+                    <img src="insta-img/image copy.png" alt="" class="insta img-fluid w-100">
                 </div>
-                <div class="col-12 col-md-2 p-0">
-                    <img src="img/share-section1.jpg" alt="" class="img-fluid w-100">
+                <div class="insta-card col-12 col-md-2 p-0">
+                    <img src="insta-img/image copy 2.png" alt="" class="insta img-fluid w-100">
                 </div>
-                <div class="col-12 col-md-2 p-0">
-                    <img src="img/explore-section1.jpg" alt="" class="img-fluid w-100">
+                <div class="insta-card col-12 col-md-2 p-0">
+                    <img src="insta-img/image copy 3.png" alt="" class="insta img-fluid w-100">
                 </div>
-                <div class="col-12 col-md-2 p-0">
-                    <img src="img/home.jpg" alt="" class="img-fluid w-100">
+                <div class="insta-card col-12 col-md-2 p-0">
+                    <img src="insta-img/image copy 5.png" alt="" class="insta img-fluid w-100">
                 </div>
-                <div class="col-12 col-md-2 p-0">
-                    <img src="img/share-section1.jpg" alt="" class="img-fluid w-100">
+                <div class="insta-card col-12 col-md-2 p-0">
+                    <img src="insta-img/image copy 4.png" alt="" class="insta img-fluid w-100">
                 </div>
             </div>
         </div>
@@ -856,31 +885,43 @@
 
     <!-- Footer -->
 
-    <footer class="pt-5 pb-4 bg-light">
+    <footer class="pt-5 pb-4 bg-white">
         <div class="container">
-
             <div class="row">
-                <div class="col-12 col-md-4">
-                    <div class="col-head">
-                        <h4>Contact Us</h4>
+
+                <!-- COL 1 : CONTACT -->
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Contact Us</h5>
+                        <span class="d-md-none" data-toggle="collapse" data-target="#contactCollapse"
+                            style="cursor:pointer;font-size:20px;">+</span>
                     </div>
-                    <ul class="mb-2">
+
+                    <ul id="contactCollapse" class="list-unstyled collapse d-md-block mt-2">
                         <li><i class="fas fa-envelope mr-2"></i>test@test.com</li>
                         <li><i class="fas fa-map-marker-alt mr-2"></i>Test address, Rajasthan</li>
                         <li><i class="fas fa-phone mr-2"></i>+(91) 099090909</li>
-                        <li class="social d-flex mt-2">
+                        <li class="social-icons d-flex mt-2">
                             <i class="fab fa-facebook-f mr-3"></i>
                             <i class="fab fa-instagram mr-3"></i>
                             <i class="fab fa-twitter"></i>
+                            <i class="fab fa-tiktok"></i>
                         </li>
                     </ul>
 
                 </div>
-                <div class="col-12 col-md-2">
-                    <div class="col-head">
-                        <h4>Shopping</h4>
+
+                <!-- COL 2 : SHOPPING -->
+                <div class="col-12 col-md-6 col-lg-2 mb-4 mb-lg-0">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Shopping</h5>
+                        <span class="d-md-none" data-toggle="collapse" data-target="#shoppingCollapse"
+                            style="cursor:pointer;font-size:20px;">+</span>
                     </div>
-                    <ul>
+
+                    <ul id="shoppingCollapse" class="list-unstyled collapse d-md-block mt-2">
                         <li>Shipping</li>
                         <li>Shopping by Brand</li>
                         <li>Track Order</li>
@@ -888,12 +929,19 @@
                         <li>Size Guide</li>
                         <li>Terms & Conditions</li>
                     </ul>
+
                 </div>
-                <div class="col-12 col-md-2">
-                    <div class="col-head">
-                        <h4>Information</h4>
+
+                <!-- COL 3 : INFORMATION -->
+                <div class="col-12 col-md-6 col-lg-2 mb-4 mb-lg-0">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Information</h5>
+                        <span class="d-md-none" data-toggle="collapse" data-target="#infoCollapse"
+                            style="cursor:pointer;font-size:20px;">+</span>
                     </div>
-                    <ul>
+
+                    <ul id="infoCollapse" class="list-unstyled collapse d-md-block mt-2">
                         <li>About Us</li>
                         <li>Refunds</li>
                         <li>Track Order</li>
@@ -901,66 +949,106 @@
                         <li>Our Blog</li>
                         <li>Careers</li>
                     </ul>
+
                 </div>
-                <div class="col-12 col-md-4">
-                    <div class="col-head">
-                        <h4>Let's keep in touch</h4>
+
+                <!-- COL 4 : NEWSLETTER -->
+                <div class="col-12 col-md-6 col-lg-5">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">Let’s keep in touch</h5>
+                        <span class="d-md-none" data-toggle="collapse" data-target="#newsletterCollapse"
+                            style="cursor:pointer;font-size:20px;">+</span>
                     </div>
-                    <div class="email d-flex mt-2">
-                        <input type="email" class="form-control mr-2" placeholder="Your Email">
-                        <button class="btn bg-dark rounded-pill px-4 text-white">Submit</button>
+
+                    <div id="newsletterCollapse" class="collapse d-md-block mt-2">
+                        <p>Enter your email below to be the first to know about new collections and product launches.
+                        </p>
+
+                        <div class="d-flex mt-2">
+                            <input type="email" class="form-control mr-2" placeholder="Your Email">
+                            <button id="subsbtn" class="btn text-white px-4 rounded-pill">Subscribe</button>
+                        </div>
+
+                        <div class="form-check mt-2">
+                            <input type="checkbox" class="form-check-input">
+                            <label class="form-check-label small text-muted">
+                                By clicking subscribe you agree to our
+                                <a href="#" class="text-dark">terms & conditions</a>
+                            </label>
+                        </div>
                     </div>
-                    <div class="form-check mt-2">
-                        <input type="checkbox" class="form-check-input mt-2">
-                        <label for="termsCheck" class="form-check-label small text-muted">
-                            By clicking subscribe you agree to our <a href="#" class="text-dark">terms &amp;
-                                conditions</a>
-                        </label>
-                    </div>
+
                 </div>
+
             </div>
         </div>
     </footer>
+    <!-- footer end -->
 
+    <hr class="m-4">
 
-    <!-- footer-bar-->
+    <!-- Footer-bar -->
 
-    <div class="bg-dark text-white py-3">
+    <div class="footer-bar">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center small">
+            <div class="row small py-3">
 
-                <!-- Left text -->
-                <div class="mr-2">
-                    <a href="#" class="text-white p-4">Help & FAQs</a>
-                    <a href="#" class="text-white">Factory</a>
+                <!-- Left -->
+                <div class="col-12 mb-3 col-lg-4 d-flex justify-content-center">
+                    <a href="#" class="text-dark mr-3">Help & FAQs</a>
+                    <a href="#" class="text-dark">Factory</a>
                 </div>
 
-                <!-- Right dropdowns -->
-                <div class="d-flex m-3">
-                    <div class="dropdown">
-                        <button class="btn btn-dark btn-sm dropdown-toggle" data-toggle="dropdown-menu-right">
+                <!-- Payments -->
+                <div class="col-12 mb-3 col-lg-5 d-flex align-items-center justify-content-center">
+                    <span class="mr-2">Payment:</span>
+                    <img src="footer-img/amex.png" class="mr-1" width="50" height="32">
+                    <img src="footer-img/discover.png" class="mr-1" width="50" height="32">
+                    <img src="footer-img/master-card.png" class="mr-1" width="50" height="32">
+                    <img src="footer-img/paypal.png" class="mr-1" width="50" height="32">
+                    <img src="footer-img/visa.png" width="50" height="32">
+                </div>
+
+                <!-- Right -->
+                <div class="col-12 col-lg-3 d-flex justify-content-center">
+                    <div class="dropdown mr-2">
+                        <button class="btn btn-sm bg-white dropdown-toggle" data-toggle="dropdown">
                             English
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#">English</a></li>
-                            <li><a class="dropdown-item" href="#">Hindi</a></li>
-                        </ul>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">Hindi</a>
+                        </div>
                     </div>
 
-                    <!-- Currency -->
                     <div class="dropdown">
-                        <button class="btn btn-dark btn-sm dropdown-toggle" data-toggle="dropdown-menu-right">
+                        <button class="btn btn-sm bg-white dropdown-toggle" data-toggle="dropdown">
                             🇺🇸 USD
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="#">USD</a></li>
-                            <li><a class="dropdown-item" href="#">INR</a></li>
-                        </ul>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#">USD</a>
+                            <a class="dropdown-item" href="#">INR</a>
+                        </div>
                     </div>
-
                 </div>
+
             </div>
         </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div id="scroll-indicator">
+        <svg width="56" height="56" viewBox="0 0 120 120">
+            <!-- Background circle -->
+            <circle cx="60" cy="60" r="54" stroke="#eee" stroke-width="8" fill="white" />
+            <!-- Progress circle -->
+            <circle id="progress-ring" cx="60" cy="60" r="54" stroke="#000" stroke-width="8" fill="none"
+                stroke-linecap="round" transform="rotate(-90 60 60)" />
+        </svg>
+
+        <!-- Arrow -->
+        <span class="arrow">^</span>
     </div>
 
 
@@ -1024,6 +1112,30 @@
 
             el.classList.add('active');
         }
+
+        const progressRing = document.getElementById("progress-ring");
+        const indicator = document.getElementById("scroll-indicator");
+
+        const radius = 54;
+        const circumference = 2 * Math.PI * radius;
+
+        progressRing.style.strokeDasharray = circumference;
+        progressRing.style.strokeDashoffset = circumference;
+
+        function updateProgress() {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = scrollTop / docHeight;
+
+            const offset = circumference - progress * circumference;
+            progressRing.style.strokeDashoffset = offset;
+        }
+
+        window.addEventListener("scroll", updateProgress);
+
+        indicator.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
 
     </script>
 

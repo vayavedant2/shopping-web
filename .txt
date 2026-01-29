@@ -1,0 +1,99 @@
+RESPONSIVE LANDING PAGE — UNIFIED STRUCTURE & RESPONSIBILITY MAP
+───────────────────────────────────────────────────────────────
+
+PROJECT
+│
+├── HTML  (STRUCTURE + VISIBILITY)
+│   │
+│   ├── Purpose
+│   │   ├── Defines WHAT exists on the page
+│   │   ├── Defines semantic blocks (topbar, header, hero, sections)
+│   │   ├── Allows DUPLICATION when UX differs per breakpoint
+│   │
+│   ├── Contains
+│   │   ├── Section wrappers (<header>, <nav>, <section>)
+│   │   ├── Bootstrap grid (container, row, col-*)
+│   │   ├── Bootstrap display utilities
+│   │   │   ├── d-none / d-block
+│   │   │   ├── d-md-flex / d-lg-none
+│   │
+│   ├── Used for
+│   │   ├── Desktop vs mobile markup separation
+│   │   ├── Structural hierarchy
+│   │   ├── Accessibility & semantics
+│   │
+│   └── NEVER does
+│       ├── Visual styling decisions
+│       ├── Animations
+│       ├── Responsive calculations
+│
+├── BOOTSTRAP (LAYOUT ENGINE)
+│   │
+│   ├── Purpose
+│   │   ├── Fast, predictable layout system
+│   │   ├── Breakpoint-aware visibility
+│   │
+│   ├── Handles
+│   │   ├── Grid columns across breakpoints
+│   │   ├── Alignment (flex utilities)
+│   │   ├── Show / hide entire blocks per device
+│   │
+│   ├── Heavily used for
+│   │   ├── Desktop-only nav
+│   │   ├── Mobile-only headers
+│   │   ├── Tablet-specific layouts
+│   │
+│   └── NEVER handles
+│       ├── Animations
+│       ├── Brand visuals
+│       ├── Fine polish
+│
+├── style.css  (VISUAL IDENTITY ONLY)
+│   │
+│   ├── Purpose
+│   │   ├── How the site FEELS
+│   │   ├── Brand fidelity
+│   │
+│   ├── Contains
+│   │   ├── Fonts, weights, colors
+│   │   ├── Component visuals
+│   │   │   ├── Topbar look
+│   │   │   ├── Navbar typography
+│   │   │   ├── Buttons, cards
+│   │   ├── ALL animations
+│   │   │   ├── Hover gradients
+│   │   │   ├── Underline transitions
+│   │   │   ├── Button shines
+│   │
+│   ├── Absolute rules
+│   │   ├── ❌ NO media queries
+│   │   ├── ❌ NO height/width tied to screen size
+│   │   ├── ❌ NO breakpoint logic
+│   │
+│   └── Mental rule
+│       └── “If screen size never changed, this file alone
+│           must make the site look premium.”
+│
+└── responsive-base.css  (RESPONSIVE BRAIN)
+    │
+    ├── Purpose
+    │   ├── WHEN layout changes
+    │   ├── WHERE elements move
+    │
+    ├── Contains ONLY
+    │   ├── Media queries
+    │   ├── Heights per breakpoint (hero, sections)
+    │   ├── Position changes
+    │   │   ├── bottom → center
+    │   │   ├── full-width → constrained
+    │   ├── Grid refinements across devices
+    │
+    ├── NEVER contains
+    │   ├── Colors
+    │   ├── Fonts
+    │   ├── Hover effects
+    │   ├── Animations
+    │
+    └── Mental rule
+        └── “This file decides where things move,
+            never how they look.”
