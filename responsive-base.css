@@ -1,0 +1,148 @@
+/* <!-- MOBILE HEADER -->
+        <header class="mobile-header mobile-only">
+            <button class="burger-btn">☰</button>
+            <img src="img/main-logo.png" class="mobile-logo" alt="Logo">
+            <!-- Cart -->
+            <div class="mobile-cart">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="9" cy="21" r="1" />
+                    <circle cx="20" cy="21" r="1" />
+                    <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6" />
+                </svg>
+        </header>
+        </div>
+        <!-- Tablet navbar -->
+
+        <header class="mobile-header tablet-only">
+            <button class="burger-btn">☰</button>
+            <img src="img/main-logo.png" class="mobile-logo" alt="Logo">
+            <div class="header-icons-tab ms-auto">
+                <!-- Search -->
+                <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="7" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+
+                <!-- Heart -->
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path
+                        d="M20.8 4.6c-1.6-1.6-4.2-1.6-5.8 0L12 7.6l-3-3c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l8.8 8.8 8.8-8.8c1.6-1.6 1.6-4.2 0-5.8z" />
+                </svg>
+
+                <!-- Cart -->
+                <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="9" cy="21" r="1" />
+                    <circle cx="20" cy="21" r="1" />
+                    <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6" />
+                </svg>
+            </div>
+        </header> */
+
+
+         /* <!-- DESKTOP GRID --> */
+            /* <div class="row">
+                <div class="col-md-4 p-2">
+                    <div class="category-card position-relative active">
+                        <img src="img/image copy 3.png" class="category-img">
+
+                        <div class="position-absolute d-flex justify-content-center"
+                            style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
+                            <button class="btn btn-light rounded-pill px-4 py-2" id="cat-btn">
+                                Trending | <small>SHOP NOW</small>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-2">
+                    <div class="category-card position-relative">
+                        <img src="img/image copy 4.png" class="category-img">
+
+                        <div class="position-absolute d-flex justify-content-center"
+                            style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
+                            <button class="btn btn-light rounded-pill px-4 py-2">
+                                Dresses | <small>SHOP NOW</small>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 p-2">
+                    <div class="category-card position-relative">
+                        <img src="img/image copy 5.png" class="category-img">
+
+                        <div class="position-absolute d-flex justify-content-center"
+                            style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
+                            <button class="btn btn-light rounded-pill px-4 py-2">
+                                Clothing | <small>SHOP NOW</small>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div> */
+
+
+/* <!-- MOBILE CAROUSEL --> */
+            /* <section class="category-section">
+        <div class="container-fluid">
+
+            
+            <div id="categoryCarousel" class="carousel slide" data-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="">
+                            <div class="category-card position-relative">
+                                <img src="img/image copy 3.png" class="category-img">
+
+                                <div class="position-absolute d-flex justify-content-center"
+                                    style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
+                                    <button class="btn btn-light rounded-pill px-4 py-2 category-btn">
+                                        <span class="cat-title">Trending</span> | <small>SHOP NOW</small>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="p-2">
+                            <div class="category-card position-relative">
+                                <img src="img/image copy 4.png" class="category-img">
+
+                                <div class="position-absolute d-flex justify-content-center"
+                                    style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
+                                    <button class="btn btn-light rounded-pill px-4 py-2 category-btn">
+                                        <span class="cat-title">Dresses</span> | <small>SHOP NOW</small>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="p-2">
+                            <div class="category-card position-relative">
+                                <img src="img/image copy 5.png" class="category-img">
+
+                                <div class="position-absolute d-flex justify-content-center"
+                                    style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
+                                    <button class="btn btn-light rounded-pill px-4 py-2 category-btn">
+                                        <span class="cat-title">Clothing</span> | <small>SHOP NOW</small>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#categoryCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#categoryCarousel" data-slide-to="1"></li>
+                        <li data-target="#categoryCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                </div>
+            </div>
+
+        </div>
+    </section> */

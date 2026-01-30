@@ -16,22 +16,23 @@
 
 <body>
 
-
-    <!--Desktop Top Bar -->
-    <div class="topbar text-white ">
+    <!--Top Bar -->
+    <div class="topbar text-white">
         <div class="container-fluid px-6">
             <div class="d-flex justify-content-between align-items-center small">
 
                 <!-- Left text -->
                 <div class="d-flex align-items-center">
-                    🔥 Flat 20% OFF on all products check out now
+                    <span class="topbar-promo">
+                        🔥 Flat 20% OFF on all products check out now
+                    </span>
                     <a href="#" class="text-white topbar-link">MEN</a>
                     <span class="topbar-divider"></span>
                     <a href="#" class="text-white topbar-link">WOMEN</a>
                 </div>
 
                 <!-- Right dropdowns -->
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center" id="topbar-right">
                     <a href="#" class="topbar-link text-white">Help & FAQs</a>
                     <span class="topbar-divider"></span>
                     <a href="#" class="topbar-link text-white">Factory</a>
@@ -64,26 +65,11 @@
         </div>
     </div>
 
-    <!-- Mobile Topbar -->
-
-    <div class="topbar mobile-topbar">
-        <div class="topbar-inner">
-            <div class="topbar-offer">
-                <span>Up to 50% off Lorem ipsum dolor sit amet consectetur</span>
-            </div>
-
-            <div class="topbar-actions">
-                <a href="#" class="topbar-link">MEN</a>
-                <span class="divider">|</span>
-                <a href="#" class="topbar-link">WOMEN</a>
-            </div>
-        </div>
-    </div>
-
+    <!-- topbar-end -->
 
 
     <!-- HERO SECTION -->
-    <section class="hero">
+    <section class="hero" style="padding-top:0;">
 
         <!-- MEDIA / CAROUSEL -->
         <div class="hero-media">
@@ -108,8 +94,8 @@
             </div>
         </div>
 
-        <!-- DESKTOP NAVBAR -->
-        <header class="hero-header desktop-only">
+        <!-- NAVBAR -->
+        <header class="hero-header">
             <nav class="navbar navbar-expand-sm p-4">
                 <div class="container-fluid">
 
@@ -117,7 +103,7 @@
                         <img src="img/main-logo.png" alt="Logo" style="height:52px;">
                     </a>
 
-                    <ul class="navbar-nav mx-auto">
+                    <ul class="navbar-nav mx-auto h5">
                         <li class="nav-item mx-2"><a class="nav-link" href="#">Home</a></li>
                         <li class="nav-item mx-2"><a class="nav-link" href="#">Shop</a></li>
                         <li class="nav-item mx-2"><a class="nav-link" href="#">Page</a></li>
@@ -156,46 +142,6 @@
             </nav>
         </header>
 
-        <!-- MOBILE HEADER -->
-        <header class="mobile-header mobile-only">
-            <button class="burger-btn">☰</button>
-            <img src="img/main-logo.png" class="mobile-logo" alt="Logo">
-            <!-- Cart -->
-            <div class="mobile-cart">
-                <svg class="icon" viewBox="0 0 24 24">
-                    <circle cx="9" cy="21" r="1" />
-                    <circle cx="20" cy="21" r="1" />
-                    <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6" />
-                </svg>
-        </header>
-        </div>
-        <!-- Tablet navbar -->
-
-        <header class="mobile-header tablet-only">
-            <button class="burger-btn">☰</button>
-            <img src="img/main-logo.png" class="mobile-logo" alt="Logo">
-            <div class="header-icons-tab ms-auto">
-                <!-- Search -->
-                <svg class="icon" viewBox="0 0 24 24">
-                    <circle cx="11" cy="11" r="7" />
-                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                </svg>
-
-                <!-- Heart -->
-                <svg class="icon" viewBox="0 0 24 24">
-                    <path
-                        d="M20.8 4.6c-1.6-1.6-4.2-1.6-5.8 0L12 7.6l-3-3c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l8.8 8.8 8.8-8.8c1.6-1.6 1.6-4.2 0-5.8z" />
-                </svg>
-
-                <!-- Cart -->
-                <svg class="icon" viewBox="0 0 24 24">
-                    <circle cx="9" cy="21" r="1" />
-                    <circle cx="20" cy="21" r="1" />
-                    <path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6" />
-                </svg>
-            </div>
-        </header>
-
         <!-- HERO TEXT -->
         <div class="hero-content">
             <div class="hero-text-wrapper active">
@@ -210,112 +156,152 @@
 
 
     <!-- Category section desktop-->
-    <section class="category-section">
-        <div class="container-fluid">
 
-            <!-- MOBILE CAROUSEL -->
-            <div id="categoryCarousel" class="carousel slide mobile-only" data-ride="carousel">
+    <div id="categoryCarousel" class="carousel slide pt-2" data-bs-touch="false" data-ride="carousel">
+        <div class="carousel-inner">
 
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="p-2">
-                            <div class="category-card position-relative">
-                                <img src="img/image copy 3.png" class="category-img">
+            <!-- SLIDE 1 -->
+            <div class="carousel-item active">
+                <div class="row m-2">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="category-card position-relative">
+                            <img src="img/image copy 3.png" class="category-img">
 
-                                <div class="position-absolute d-flex justify-content-center"
-                                    style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
-                                    <button class="btn btn-light rounded-pill px-4 py-2">
-                                        Trending | <small>SHOP NOW</small>
-                                    </button>
-                                </div>
+                            <div class="position-absolute d-flex justify-content-center"
+                                style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
+                                <button class="btn btn-light rounded-pill px-4 py-2">
+                                    Trending | <small>SHOP NOW</small>
+                                </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="carousel-item">
-                        <div class="p-2">
-                            <div class="category-card position-relative">
-                                <img src="img/image copy 4.png" class="category-img">
+                    <div class="col-lg-4 col-md-6 d-none d-md-block">
+                        <div class="category-card position-relative">
+                            <img src="img/image copy 4.png" class="category-img">
 
-                                <div class="position-absolute d-flex justify-content-center"
-                                    style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
-                                    <button class="btn btn-light rounded-pill px-4 py-2">
-                                        Dresses | <small>SHOP NOW</small>
-                                    </button>
-                                </div>
+                            <div class="position-absolute d-flex justify-content-center"
+                                style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
+                                <button class="btn btn-light rounded-pill px-4 py-2">
+                                    Dresses | <small>SHOP NOW</small>
+                                </button>
                             </div>
                         </div>
                     </div>
 
-                    <div class="carousel-item">
-                        <div class="p-2">
-                            <div class="category-card position-relative">
-                                <img src="img/image copy 5.png" class="category-img">
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <div class="category-card position-relative">
+                            <img src="img/image copy 5.png" class="category-img">
 
-                                <div class="position-absolute d-flex justify-content-center"
-                                    style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
-                                    <button class="btn btn-light rounded-pill px-4 py-2">
-                                        Clothing | <small>SHOP NOW</small>
-                                    </button>
-                                </div>
+                            <div class="position-absolute d-flex justify-content-center"
+                                style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
+                                <button class="btn btn-light rounded-pill px-4 py-2">
+                                    Clothing | <small>SHOP NOW</small>
+                                </button>
                             </div>
                         </div>
                     </div>
-
-                    <ol class="carousel-indicators">
-                        <li data-target="#categoryCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#categoryCarousel" data-slide-to="1"></li>
-                        <li data-target="#categoryCarousel" data-slide-to="2"></li>
-                    </ol>
-
                 </div>
             </div>
 
-            <!-- DESKTOP GRID -->
-            <div class="row desktop-only">
-                <div class="col-md-4 p-2">
-                    <div class="category-card position-relative active">
-                        <img src="img/image copy 3.png" class="category-img">
+            <!-- slide 2 -->
 
-                        <div class="position-absolute d-flex justify-content-center"
-                            style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
-                            <button class="btn btn-light rounded-pill px-4 py-2">
-                                Trending | <small>SHOP NOW</small>
-                            </button>
+            <div class="carousel-item">
+                <div class="row m-2">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="category-card position-relative">
+                            <img src="img/image copy 4.png" class="category-img">
+
+                            <div class="position-absolute d-flex justify-content-center"
+                                style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
+                                <button class="btn btn-light rounded-pill px-4 py-2">
+                                    Dresses | <small>SHOP NOW</small>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-none d-md-block">
+                        <div class="category-card position-relative">
+                            <img src="img/image copy 5.png" class="category-img">
+
+                            <div class="position-absolute d-flex justify-content-center"
+                                style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
+                                <button class="btn btn-light rounded-pill px-4 py-2">
+                                    Clothing | <small>SHOP NOW</small>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <div class="category-card position-relative">
+                            <img src="img/image copy 3.png" class="category-img">
+
+                            <div class="position-absolute d-flex justify-content-center"
+                                style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
+                                <button class="btn btn-light rounded-pill px-4 py-2" id="cat-btn">
+                                    Trending | <small>SHOP NOW</small>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-md-4 p-2">
-                    <div class="category-card position-relative">
-                        <img src="img/image copy 4.png" class="category-img">
+            <!-- slide3 -->
+            <div class="carousel-item">
+                <div class="row m-2">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="category-card position-relative">
+                            <img src="img/image copy 5.png" class="category-img">
 
-                        <div class="position-absolute d-flex justify-content-center"
-                            style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
-                            <button class="btn btn-light rounded-pill px-4 py-2">
-                                Dresses | <small>SHOP NOW</small>
-                            </button>
+                            <div class="position-absolute d-flex justify-content-center"
+                                style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
+                                <button class="btn btn-light rounded-pill px-4 py-2">
+                                    Clothing | <small>SHOP NOW</small>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 d-none d-md-block">
+                        <div class="category-card position-relative">
+                            <img src="img/image copy 3.png" class="category-img">
+
+                            <div class="position-absolute d-flex justify-content-center"
+                                style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
+                                <button class="btn btn-light rounded-pill px-4 py-2" id="cat-btn">
+                                    Trending | <small>SHOP NOW</small>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <div class="category-card position-relative">
+                            <img src="img/image copy 4.png" class="category-img">
+
+                            <div class="position-absolute d-flex justify-content-center"
+                                style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
+                                <button class="btn btn-light rounded-pill px-4 py-2">
+                                    Dresses | <small>SHOP NOW</small>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-4 p-2">
-                    <div class="category-card position-relative">
-                        <img src="img/image copy 5.png" class="category-img">
-
-                        <div class="position-absolute d-flex justify-content-center"
-                            style="bottom:15px; left:50%; transform:translateX(-50%); width:100%;">
-                            <button class="btn btn-light rounded-pill px-4 py-2">
-                                Clothing | <small>SHOP NOW</small>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
         </div>
-    </section>
+        <!-- INDICATORS -->
+        <ol class="carousel-indicators d-lg-none">
+            <li data-target="#categoryCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#categoryCarousel" data-slide-to="1"></li>
+            <li data-target="#categoryCarousel" data-slide-to="2"></li>
+        </ol>
+
+    </div>
 
 
     <!-- New arrival section -->
@@ -589,7 +575,7 @@
                     <img src="img/lookbook.png" alt="" class="img-fluid w-100">
                     <div class="text-wrapper position-absolute text-white"
                         style="bottom:30px; left:50%; transform:translateX(-50%);">
-                        <h4 class="">Lookbook</h4>
+                        <h2 class="">Lookbook</h2>
                         <p>347 products</p>
                         <a href="#">Explore Now</a>
                     </div>
@@ -714,7 +700,7 @@
                         <hr>
                         <div class="d-flex align-items-center mt-2">
                             <img src="rev-img/image copy 2.png" class="mr-3 ml-2 mb-2" style="width:40px; height:40px;">
-                            <span class="font-weight-bold">Winter Jacket</span>
+                            <span class="font-weight-bold review-product-name">Short sleeve office shirt</span>
                         </div>
                     </div>
                 </div>
@@ -735,7 +721,7 @@
                         <hr>
                         <div class="d-flex align-items-center mt-2">
                             <img src="rev-img/image copy.png" class="mr-3 ml-2 mb-2" style="width:40px; height:40px;">
-                            <span class="font-weight-bold">Winter Jacket</span>
+                            <span class="font-weight-bold review-product-name">UrbanCool Work Shirt</span>
                         </div>
                     </div>
                 </div>
@@ -756,7 +742,7 @@
                         <hr>
                         <div class="d-flex align-items-center mt-2">
                             <img src="rev-img/image.png" class="mr-3 ml-2 mb-2" style="width:40px; height:40px;">
-                            <span class="font-weight-bold">Winter Jacket</span>
+                            <span class="font-weight-bold review-product-name">WorkMode Lite</span>
                         </div>
                     </div>
                 </div>
@@ -768,6 +754,9 @@
 
     <!-- Read Our BLOG section -->
 
+
+
+
     <div class="blog-section">
         <div class="container">
             <div class="section-header text-center p-4">
@@ -775,14 +764,15 @@
             </div>
             <div class="row justify-content-center align-items-center">
 
-                <div class=" col-12 col-md-3 p-2 position-relative">
-                    <div class="card m-3 p-2 border-0">
+                <div class="col-12 col-md-4 col-lg-3 col-sm-12 p-2 position-relative">
+                    <div class="card p-2 border-0">
                         <div class="image-wrapper position-relative mb-2">
                             <div class="date position-absolute bg-dark text-white text-center d-inline-block px-2 py-1">
                                 2nd March 2024
                             </div>
                             <img src="blog-img/image.png" alt="" class="img-fluid w-100"
                                 style="height:320px; object-fit:cover;">
+                            <span class="glare"></span>
                         </div>
                         <div class="blog-card">
                             <h4>Bring confidence with simple T-shirt style</h4>
@@ -793,14 +783,15 @@
                     </div>
                 </div>
 
-                <div class=" col-12 col-md-3 p-2 position-relative">
-                    <div class="card m-3 p-2 border-0">
+                <div class="col-12 col-md-4 col-lg-3 col-sm-12 p-2 position-relative">
+                    <div class="card p-2 border-0">
                         <div class="image-wrapper position-relative mb-2">
                             <div class="date position-absolute bg-dark text-white text-center d-inline-block px-2 py-1">
                                 2nd March 2024
                             </div>
                             <img src="blog-img/image copy.png" alt="" class="img-fluid w-100"
                                 style="height:320px; object-fit:cover;">
+                            <span class="glare"></span>
                         </div>
                         <div class="blog-card">
                             <h4>Bring confidence with simple T-shirt style</h4>
@@ -811,14 +802,15 @@
                     </div>
                 </div>
 
-                <div class=" col-12 col-md-3 p-2 position-relative">
-                    <div class="card m-3 p-2 border-0">
+                <div class="col-12 col-md-4 col-lg-3 p-2 position-relative col-sm-12">
+                    <div class="card p-2 border-0">
                         <div class="image-wrapper position-relative mb-2">
                             <div class="date position-absolute bg-dark text-white text-center d-inline-block px-2 py-1">
-                                2nd March 2024
+                                9nd March 2024
                             </div>
                             <img src="blog-img/image copy 2.png" alt="" class="img-fluid w-100"
                                 style="height:320px; object-fit:cover;">
+                            <span class="glare"></span>
                         </div>
                         <div class="blog-card">
                             <h4>Bring confidence with simple T-shirt style</h4>
@@ -829,14 +821,15 @@
                     </div>
                 </div>
 
-                <div class=" col-12 col-md-3 p-2 position-relative">
-                    <div class="card m-3 p-2 border-0">
+                <div class="col-12 col-md-4 col-lg-3 col-sm-12 p-2 position-relative">
+                    <div class="card p-2 border-0">
                         <div class="image-wrapper position-relative mb-2">
                             <div class="date position-absolute bg-dark text-white text-center d-inline-block px-2 py-1">
                                 2nd March 2024
                             </div>
                             <img src="blog-img/image copy 3.png" alt="" class="img-fluid w-100"
                                 style="height:320px; object-fit:cover;">
+                            <span class="glare"></span>
                         </div>
                         <div class="blog-card">
                             <h4>Bring confidence with simple T-shirt style</h4>
@@ -853,35 +846,102 @@
 
 
     <!-- Follow on instagram -->
+    <section class="">
+        <div class="instagram">
+            <div class="container-fluid px-0">
+                <div class="section-header text-center mb-2 mt-2">
+                    <h1>Follow us on Instagram</h1>
+                    <p><b>@absc:</b> Follow us and get<b> 20% off coupoun</b></p>
+                </div>
+                <div class="row no-gutters m-0">
 
-    <div class="instagram">
-        <div class="container-fluid px-0">
-            <div class="section-header text-center m-2">
-                <h1>Follow us on Instagram</h1>
-                <small>@absc: Follow us and get<b> 20% off coupoun</b></small>
-            </div>
-            <div class="row no-gutters m-0">
-                <div class="insta-card col-12 col-md-2 p-0">
-                    <img src="insta-img/image.png" alt="" class="insta img-fluid w-100">
-                </div>
-                <div class="insta-card col-12 col-md-2 p-0">
-                    <img src="insta-img/image copy.png" alt="" class="insta img-fluid w-100">
-                </div>
-                <div class="insta-card col-12 col-md-2 p-0">
-                    <img src="insta-img/image copy 2.png" alt="" class="insta img-fluid w-100">
-                </div>
-                <div class="insta-card col-12 col-md-2 p-0">
-                    <img src="insta-img/image copy 3.png" alt="" class="insta img-fluid w-100">
-                </div>
-                <div class="insta-card col-12 col-md-2 p-0">
-                    <img src="insta-img/image copy 5.png" alt="" class="insta img-fluid w-100">
-                </div>
-                <div class="insta-card col-12 col-md-2 p-0">
-                    <img src="insta-img/image copy 4.png" alt="" class="insta img-fluid w-100">
+                    <div class="insta-card col-12 col-md-2 p-0">
+                        <a href="#" class="insta-link">
+                            <img src="insta-img/image.png" alt="" class="insta img-fluid w-100">
+
+                            <!-- overlay -->
+                            <div class="insta-overlay">
+                                <div class="insta-icon-wrap">
+                                    <span class="insta-tooltip">View Product</span>
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="insta-card col-12 col-md-2 p-0">
+                        <a href="#" class="insta-link">
+                            <img src="insta-img/image copy.png" alt="" class="insta img-fluid w-100">
+
+                            <!-- overlay -->
+                            <div class="insta-overlay">
+                                <div class="insta-icon-wrap">
+                                    <span class="insta-tooltip">View Product</span>
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="insta-card col-12 col-md-2 p-0">
+                        <a href="#" class="insta-link">
+                            <img src="insta-img/image copy 2.png" alt="" class="insta img-fluid w-100">
+                            <!-- overlay -->
+                            <div class="insta-overlay">
+                                <div class="insta-icon-wrap">
+                                    <span class="insta-tooltip">View Product</span>
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="insta-card col-12 col-md-2 p-0">
+                        <a href="#" class="insta-link">
+                            <img src="insta-img/image copy 3.png" alt="" class="insta img-fluid w-100">
+                            <!-- overlay -->
+                            <div class="insta-overlay">
+                                <div class="insta-icon-wrap">
+                                    <span class="insta-tooltip">View Product</span>
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="insta-card col-12 col-md-2 p-0">
+                        <a href="#" class="insta-link">
+                            <img src="insta-img/image copy 4.png" alt="" class="insta img-fluid w-100">
+                            <!-- overlay -->
+                            <div class="insta-overlay">
+                                <div class="insta-icon-wrap">
+                                    <span class="insta-tooltip">View Product</span>
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="insta-card col-12 col-md-2 p-0">
+                        <a href="#" class="insta-link">
+                            <img src="insta-img/image copy 5.png" alt="" class="insta img-fluid w-100">
+                            <!-- overlay -->
+                            <div class="insta-overlay">
+                                <div class="insta-icon-wrap">
+                                    <span class="insta-tooltip">View Product</span>
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- insta-end -->
+
+    <hr class="d-lg-none my-4">
 
     <!-- Footer -->
 
@@ -966,7 +1026,7 @@
                         </p>
 
                         <div class="d-flex mt-2">
-                            <input type="email" class="form-control mr-2" placeholder="Your Email">
+                            <input type="email" class="form-control mr-2 rounded-pill" placeholder="Your Email">
                             <button id="subsbtn" class="btn text-white px-4 rounded-pill">Subscribe</button>
                         </div>
 
@@ -986,22 +1046,23 @@
     </footer>
     <!-- footer end -->
 
-    <hr class="m-4">
+    <hr class="m-3">
 
     <!-- Footer-bar -->
 
     <div class="footer-bar">
-        <div class="container">
-            <div class="row small py-3">
+        <div class="container-fluid">
+            <div class="row align-items-center m-4 mx-1">
 
                 <!-- Left -->
-                <div class="col-12 mb-3 col-lg-4 d-flex justify-content-center">
+                <div
+                    class="col-12 col-lg-3 mb-3 mb-lg-0 d-flex align-items-center justify-content-lg-start justify-content-center">
                     <a href="#" class="text-dark mr-3">Help & FAQs</a>
                     <a href="#" class="text-dark">Factory</a>
                 </div>
 
                 <!-- Payments -->
-                <div class="col-12 mb-3 col-lg-5 d-flex align-items-center justify-content-center">
+                <div class="col-12 col-lg-6 mb-3 mb-lg-0 d-flex align-items-center justify-content-center">
                     <span class="mr-2">Payment:</span>
                     <img src="footer-img/amex.png" class="mr-1" width="50" height="32">
                     <img src="footer-img/discover.png" class="mr-1" width="50" height="32">
@@ -1011,7 +1072,7 @@
                 </div>
 
                 <!-- Right -->
-                <div class="col-12 col-lg-3 d-flex justify-content-center">
+                <div class="col-12 col-lg-3 d-flex align-items-center justify-content-center justify-content-lg-end">
                     <div class="dropdown mr-2">
                         <button class="btn btn-sm bg-white dropdown-toggle" data-toggle="dropdown">
                             English
@@ -1092,6 +1153,39 @@
             }, 200);
         }
 
+        //category indicators
+        var $carousel = $('#categoryCarousel');
+
+        function updateCarousel() {
+            var w = window.innerWidth;
+
+            if (w < 768) {
+                $carousel.carousel({
+                    interval: 1500,
+                    ride: 'carousel',
+                    touch: false
+                });
+            }
+            else if (w < 992) {
+                $carousel.carousel({
+                    interval: 2000,
+                    ride: 'carousel',
+                    touch: false
+                });
+            }
+            else {
+                $carousel.carousel('pause');
+            }
+        }
+
+        $(window).on('load resize', updateCarousel);
+        //
+
+        $(window).on('load resize', updateCarousel);
+        window.addEventListener('load', updateCarousel);
+        window.addEventListener('resize', updateCarousel);
+
+
         // initial load
         updateHeroText(0);
 
@@ -1136,6 +1230,17 @@
         indicator.addEventListener("click", () => {
             window.scrollTo({ top: 0, behavior: "smooth" });
         });
+
+        $(function () {
+            $('[data-toggle="popover"]').popover({
+                trigger: 'hover',
+                template:
+                    '<div class="popover bg-dark text-white border-0" role="tooltip">' +
+                    '<div class="arrow"></div>' +
+                    '<div class="popover-body"></div>' +
+                    '</div>'
+            })
+        })
 
     </script>
 
